@@ -13,4 +13,4 @@ done
 echo -e "$NC"
 echo -e "The biggest file was found ${Green}successfully!${NC}"
 target=/user 
-du -ah | sort -h | tail -n 2 | head -n 1 | awk '{print "The filename is: "$2 "\n" "It weighs: " $1}'
+du -ah $target | sort -h | tail -n 2 | head -n 1 | awk '{print "The filename is: "$2 "\n" "It weighs: " $1}'
